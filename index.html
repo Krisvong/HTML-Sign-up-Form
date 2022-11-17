@@ -32,6 +32,11 @@
 
                     <h5>DISCLAIMER: must be 21 years of age or older</h5>
                 </div>
+                <div>
+                    <label for="text">Your Secret Code <span class="required-field">*</span></label>
+                    <input type="password" id="password" name="password" title="6 Alphanumeric Character Passcode" pattern="[0-9a-zA-Z]{6}" required>
+                </div>    
+    
             </fieldset>
             <!-- TODO: Make fieldset and legend -->
              <!-- Todo: Email Input -->
@@ -106,7 +111,7 @@
                 </datalist>
 
                 <label for="zipcode">Your Zipcode</label>
-                <input type="number" id="zipcode" name="zipcode">
+                <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="5-Digit US ZIP code">
                 </div>
               </fieldset>
             
