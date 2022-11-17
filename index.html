@@ -12,23 +12,96 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form method="GET" action="results.html"> <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
                 <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Your Last Name</label>
+                <input type="text" id="lastname" name="lastname">
             </div>
             <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
+             <!-- Todo: Email Input -->
+            <fieldset>
+                <legend>Your Contact Info</legend>
+                <label for="email">Your Email</label>
+                <input type="text" id="email" name="email">
+
+                <label for="address">Your Street Address</label>
+                <input type="text" id="address" name="address">
+
+                <label for="city">Your City</label>
+                <input type="text" id="city" name="city">
+
+                <label for="state">Your State</label>
+                <input type="text" id="state" name="state">
+
+                <select name="state">
+                    <option value="AK">Alaska</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CT">Connecticut</option>
+
+                </select>
+
+                <label for="zipcode">Your Zipcode</label>
+                <input type="text" id="zipcode" name="zipcode">
+              </fieldset>
+            
             <!-- Todo: Street Address Input -->
+           
+
             <!-- Todo: City, State, and Zip Inputs -->
 
             <!-- TODO: Second fieldset -->
+            <fieldset>
+                <legend>Your Preferences</legend>
+                <h3>Choose your location</h3>
+                <div>
+                    <label for="aruba">Aruba</label>
+                    <input type="radio" id="aruba" name="location" value="Aruba" checked>
+                </div>
+                <div>
+                    <lable for="japan">Japan</lable>
+                    <input type="radio" id="japan" name="location" value="Japan">
+                </div>
+                <div>
+                    <label for="reykjavik">Reykjavik</label>
+                    <input type="radio" id="reykjavik" name="location" value="reykjavik">
+                </div>
+                <div>
+                    <label for=""new-zealand>New Zealand</label>
+                    <input type="radio" id="new-zealand" name="location" value="new-zealand">
+                </div>
+            </fieldset>
             <!-- TODO: Radio buttons for selecting preferred destination -->
             <!-- TODO: Color input for selecting favorite color -->
+            <fieldset>
+            <label for="color">Favorite Color</label>
+            <input type="color" id="color" name="color">
+           </fieldset>
             <!-- TODO: Checkboxes for selecting extra add-ons -->
+            <fieldset>
+                <legend>Extras</legend>
+                <h3>Select Add-ons For Your Vacation</h3>
+                <div>
+                    <label for="sauna">sauna</label>
+                    <input type="checkbox" id="sauna" name="extras" value="sauna">
+                </div>
+                <div>
+                    <label for="in-roomhottub">In-room hot tub</label>
+                    <input type="checkbox" id="in-roomhottub" name="extras" value="in-room hot tub">
+                </div>
+                <div>
+                    <label for="minibar">Mini Bar</label>
+                    <input type="checkbox" id="minibar" name="extras" value="minibar">
+                </div>
+            </fieldset>
             
             <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the Contest">
         </form>
     </main>
     <footer>
